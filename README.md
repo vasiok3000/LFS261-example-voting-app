@@ -1,6 +1,6 @@
 Example Voting App
 
-http://34.159.137.90:8080/buildStatus/icon?job=instavote%2Fworker-build
+<a href='http://34.159.137.90:8080/job/instavote/job/worker-build/'><img src='http://34.159.137.90:8080/buildStatus/icon?job=instavote%2Fworker-build'></a>
 
 added changes #1
 =========
