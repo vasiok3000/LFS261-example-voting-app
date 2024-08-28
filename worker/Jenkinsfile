@@ -38,10 +38,9 @@ pipeline {
             echo 'Packaging worker app with docker'
             script{
                 docker.withRegistry('https://index.docker.io/v1/','dockerlogin') {
-                    def workerImage = docker.build("xxxxx/worker:v$
-                    {env.BUILD_ID}", "./worker")
-                    workerImage.push()
-                    workerImage.push("latest")
+                    def workerImage = docker.build("vasiok3000/worker:v${env.BUILD_ID}", "./worker")
+                        workerImage.push()
+                        workerImage.push("latest")
                 }
             }
         }
